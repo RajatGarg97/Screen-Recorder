@@ -1,12 +1,25 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Hello World!</title>
-    <link rel="stylesheet" href="index.css">
-  </head>
-  <body>
-    <h1>💖 Hello World!</h1>
-    <p>Welcome to your Electron application.</p>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Hello World!</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+  <link rel="stylesheet" href="index.css">
+
+  <script defer src="render.js"></script>
+</head>
+
+<body>
+  <h1> Electron Screen Recorder </h1>
+  <video id="videoFrame" src=""></video>
+  <button id=" startbtn" class="button is-primary">Start 🚀 </button>
+  <button id="stopbtn" class="button is-warning">Stop 🔴 </button>
+  <hr />
+  <button id="videoSelectionBtn" class="button is-text">
+    Choose a Video Source 📂
+  </button>
+
+</body>
+
 </html>
