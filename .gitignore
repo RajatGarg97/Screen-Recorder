@@ -90,3 +90,6 @@ out/
 
 # Config files
 package-lock.json
+
+# Ignoring recordings
+*.webm
