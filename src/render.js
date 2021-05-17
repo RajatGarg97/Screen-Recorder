@@ -14,16 +14,26 @@ const videoSelectBtn = document.getElementById('videoSelectionBtn');
 videoSelectBtn.onclick = getVideoSources;
 
 startBtn.onclick = e => {
-	mediaRecorder.start();
-	startBtn.classList.add('is-danger');
-	startBtn.innerText = 'Recording 📹'
+	if (mediaRecorder) {
+		mediaRecorder.start();
+		startBtn.classList.add('is-danger');
+		startBtn.innerText = 'Recording 📹'
+	} else {
+		alert('Duhh!🤦‍♂️ You forgot to choose the target screen')
+	}
 };
 
-stopBtn.onclick = e => {
-	mediaRecorder.stop();
-	startBtn.classList.remove('is-danger');
-	startBtn.innerText = 'Start 🚀'
-};
+stopBtn.onclick = stopButton;
+
+function stopButton(e) {
+	if (mediaRecorder) {
+		startBtn.classList.remove('is-danger');
+		startBtn.innerText = 'Start 🚀'
+		mediaRecorder.stop();
+	} else {
+		alert('Duhh!🤦‍♂️ You forgot to start recording')
+	}
+}
 
 // Available Video Sources
 async function getVideoSources() {
@@ -65,8 +75,13 @@ async function selectSource(source) {
 }
 
 function handleDataAvailable(e) {
-	recordedChunks.push(e.data);
-	console.log('Data pushed into chunks');
+	try {
+		recordedChunks.push(e.data);
+		console.log('Data pushed into chunks');
+	} catch (error) {
+		console.log(error);
+		stopButton(e);
+	}
 }
 
 async function handleStop(e) {
