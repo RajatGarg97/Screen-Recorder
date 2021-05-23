@@ -1,3 +1,43 @@
+h1 {
+  text-align: center;
+}
+
+#footer {
+  margin-top: 13%;
+}
+
+.social-ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  padding: 10px;
+  margin: 0;
+}
+
+#vidSelectionBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#startbtn {
+  margin: 5px;
+}
+#stopbtn {
+  margin: 5px;
+}
+#operatingbtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-ul a { 
+  font-size: 25px;
+  margin: 0 10px;
+  position: relative;
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   margin: auto;
@@ -5,10 +45,12 @@ body {
   padding: 2rem;
 }
 
-footer{
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  bottom: 0;
-  position: absolute;
-  display: flex;
-  align-self: center;
+#credits {
+  color: #000;
+  padding: 3px;
+  text-align: center;
+}
+
+#credits a{
+  color: #808080;
 }
