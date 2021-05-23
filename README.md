@@ -5,6 +5,11 @@ This Screen Recorder helps easily record the target screen without any watermark
 Link to the build v1.0.0 is here: <a href = 'https://drive.google.com/file/d/1x7ntHEnIdoP6EszgA0aM2qL7ytENIQus/view?usp=sharing' target='_blank'>
 Screen Recorder v1.0.0 </a>
 
+## Features of Screen Recorder v1.0.0
+
+- Simple and easy-to-use user interface
+- Provides dedicated screen recording of an application window
+
 ## How to Use
 
 - Download the zip file from the link above.
