@@ -10,11 +10,16 @@ Screen Recorder v1.0.0 </a>
 - Simple and easy-to-use user interface
 - Provides dedicated screen recording of an application window
 
-## How to Use
+## How to Use the build
 
 - Download the zip file from the link above.
 - Unzip the file to extract the setup.
 - Double click the setup and you are all set.
+
+## How to compile the source code
+
+- Clone this repository
+- Get into the root directory of the repository and type `npm install` in the terminal
 
 ## About
 
