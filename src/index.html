@@ -3,25 +3,48 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Screen Recorder</title>
+  <title> Screen Recorder </title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
   <link rel="stylesheet" href="index.css">
 
 </head>
 
 <body>
-  <h1> Electron Screen Recorder </h1>
+  <h1> Screen Recorder </h1>
   <video></video>
-  <button id="startbtn" class="button is-primary">Start 🚀 </button>
-  <button id="stopbtn" class="button is-warning ">Stop 🔴 </button>
+  <div id="operatingbtn">
+    <button id="startbtn" class="button is-primary">Start 🚀 </button>
+    <button id="stopbtn" class="button is-warning ">Stop 🔴 </button>
+  </div>
   <hr />
-  <button id="videoSelectionBtn" class="button is-link is-outlined">
-    Choose a Target Screen
-  </button>
+  <div id="vidSelectionBtn">
+    <button id="videoSelectionBtn" class="button is-link is-outlined">
+      Choose a Target Screen
+    </button>
+  </div>
 
 </body>
 <script defer src="render.js"></script>
-
-<footer> Made with 💝 by Rajat Garg</footer>
+<div id="footer">
+  <div id="icons">
+    <ul class="social-ul">
+      <li><a href="https://www.linkedin.com/in/rajatgarg97/" target="_blank">
+          <i class="fab fa-linkedin"></i></a></li>
+      <li><a href="https://github.com/RajatGarg97/" target="_blank">
+          <i class="fab fa-github"></i></a></li>
+      <li><a href="https://twitter.com/neorajat97" target="_blank">
+          <i class="fab fa-twitter"></i></a></li>
+      <li><a href="https://www.facebook.com/rajatgarg97" target="_blank">
+          <i class="fab fa-facebook"></i></a></li>
+    </ul>
+  </div>
+  <div id="credits">
+    License: MIT | Developed by
+    <a href="https://www.rajatgarg.tech/" target="_blank">
+      <u> Rajat Garg </u>
+    </a>
+  </div>
+</div>
 
 </html>
