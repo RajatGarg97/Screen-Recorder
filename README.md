@@ -2,6 +2,8 @@
 
 This Screen Recorder helps easily record the target screen without any watermarks or time limits and, is absolutely free.
 
+![Snap of Screen Recorder App](/images/screenrecorder.png)
+
 ## Build Links 🔗
 
 - `v1.0.1`:<a href = 'https://drive.google.com/file/d/1rL951f9YG3QG-CmNkdWwi4gujz3bfsmP/view?usp=sharing' target='_blank'>
